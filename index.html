@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUIT</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+
+      <div class="user">
+        <div class="title-user">
+          <h2></h2>
+        </div>
+        <div class="emoji-user">
+          <ul>
+              <li class="emoji-us">
+                <p onclick="resultMatch('🖐️')">🖐️</p>
+            </li>
+              <li class="emoji-us">
+                <p onclick="resultMatch('✌️')">✌️</p>
+              </li>
+              <li class="emoji-us">
+                <p onclick="resultMatch('✊')">✊</p>
+              </li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="vs-tump">
+      <h2>VS</h2>
+    </div>
+
+    
+    <div class="result">
+      <div class="main" hidden>
+        <div class="title-result">
+          <h2>HASIL</h2>
+        </div>
+        <div class="main-result">
+          <ul>
+            <li class="emoji-result">
+              <h4></h4>
+              <p class="add-result">.</p>
+            </li>
+            <li class="emoji-result">
+              <p>VS</p>
+            </li>
+            <li class="emoji-result">
+              <h4>BOT</h4>
+              <p class="add-result">.</p>
+            </li>
+          </ul>
+        </div>
+
+        <p class="winner"></p>
+      </div>
+    </div>
+
+
+    <div class="komp">
+      <div class="emoji-komp">
+        <ul>
+            <li class="emoji-km">
+              <p>🖐️</p>
+            </li>
+            <li class="emoji-km">
+              <p>✌️</p>
+            </li>
+            <li class="emoji-km">
+              <p>✊</p>
+            </li>
+        </ul>
+      </div>
+      <div class="title-komp">
+        <h2>BOT</h2>
+      </div>
+  </div>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

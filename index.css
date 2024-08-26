@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d8f3dc;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.user {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.title-user, 
+.title-komp {
+  color: #14213d;
+}
+
+.emoji-komp ul, 
+.emoji-user ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.komp {margin-top: 20px; text-align: center;}
+
+.emoji-us {
+  list-style-type: none;
+  margin: 20px;
+  padding: 20px ;
+  border-radius: 100%;
+  font-size: 50px;
+}
+
+.emoji-km {
+  list-style-type: none;
+  margin: 0px 20px ;
+  padding: 20px ;
+  border-radius: 100%;
+  font-size: 50px;
+}
+
+.emoji-us:hover {
+  cursor: pointer;
+  background-color: #95d5b2;
+  transform: rotate(0.5turn) scale(110%);
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1) ease-in-out;
+}
+
+.emoji-km-selected {
+  padding: 20px ;
+  border-radius: 100%;
+  background-color: #95d5b2; /* Warna highlight */
+  transform: scale(110%);
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1) ease-in-out;;
+}
+
+.vs-tump {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.result {
+  margin: 30px 0px ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+}
+
+.main {
+  background-color: #b7e4c7;
+  width: 35%;
+  border-radius: 15px;
+  /* min-height: auto; */
+}
+
+.title-result h2{
+  text-align: center;
+  margin: 5px;
+}
+
+.main-result ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emoji-result{
+  font-size: 30px;
+  text-align: center;
+  list-style-type: none;
+  margin: 30px;
+  border-radius: 100%;
+}
+
+.winner {
+  padding: 5px 0px 10px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Media Queries untuk layar kecil */
+@media (max-width: 768px){
+  body {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .emoji-us, .emoji-km {
+    font-size: 40px;
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .main {
+    width: 80%;
+  }
+
+  .emoji-result {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .emoji-us, .emoji-km {
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .emoji-result {
+    font-size: 20px;
+  }
+
+  .title-user h2, .title-komp h2 {
+    font-size: 20px;
+  }
+
+  .winner {
+    font-size: 20px;
+  }
+}
